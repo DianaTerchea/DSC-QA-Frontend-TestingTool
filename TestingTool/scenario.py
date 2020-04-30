@@ -36,6 +36,7 @@ class Scenario(EmbeddedDocument):
             result = task.result.result
             if result is False:
                 data.append(task.result.data)
+                break
         if data:
             result = False
         response_result = Result(result=result, data=data)
