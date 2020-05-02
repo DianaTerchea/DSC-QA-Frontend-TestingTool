@@ -1,59 +1,59 @@
 {
-    "name": "Login Google",
-    "url": "",
-    "tasks": [
-        {
-            "name": "Go to Google",
-            "action": "go_to_url",
-            "args": {
-                "url": "https://accounts.google.com/"
-            }
-        },
-        {
-            "name": "Insert Email",
-            "action": "input_element",
-            "args": {
-                "xpath": "//*[@id=\"identifierId\"]",
-                "input_text": "qadsc2020@gmail.com"
-            }
-        },
-        {
-            "name": "Click Forward Button",
-            "action": "click_element",
-            "args": {
-                "xpath": "//*[@id=\"identifierNext\"]/div[2]"
-            }
-        },
-        {
-            "name": "Insert Password",
-            "action": "input_element",
-            "args": {
-                 "xpath": "//*[@id=\"password\"]/div[1]/div/div[1]/input",
-                "input_text": "qaguys2020"
-            }
-        },
-       {
-            "name": "Click Forward Button",
-            "action": "click_element",
-            "args": {
-                "xpath": "//*[@id=\"passwordNext\"]/div[2]"
-            }
-        },
-        {
-            "name": "Click Profile Button",
-            "action": "click_element",
-            "args": {
-                "xpath": "/html/body/div[2]/header/div[2]/div[3]/div[1]/div/div/a/span"
-            }
-        },
-           {
-            "name": "Check email matches regex",
-            "action": "matches_regex",
-            "args": {
-                "xpath": "/html/body/div[2]/header/div[2]/div[4]/div[1]/div[2]/div[2]",
-                "regex": "qadsc2020@gmail.com"
-            }
-        }
+  "name": "Login Google",
+  "url": "",
+  "tasks": [
+    {
+      "name": "Go to Google",
+      "action": "go_to_url",
+      "args": {
+        "url": "https://accounts.google.com/"
+      }
+    },
+    {
+      "name": "Insert Email",
+      "action": "input_element",
+      "args": {
+        "xpath": "//*[@id=\"identifierId\"]",
+        "input_text": "qadsc2020@gmail.com"
+      }
+    },
+    {
+      "name": "Click Forward Button",
+      "action": "click_element",
+      "args": {
+        "xpath": "//*[@id=\"identifierNext\"]/div[2]"
+      }
+    },
+    {
+      "name": "Insert Password",
+      "action": "input_element",
+      "args": {
+        "xpath": "//*[@id=\"password\"]/div[1]/div/div[1]/input",
+        "input_text": "qaguys2020"
+      }
+    },
+    {
+      "name": "Click Forward Button",
+      "action": "click_element",
+      "args": {
+        "xpath": "//*[@id=\"passwordNext\"]/div[2]"
+      }
+    },
+    {
+      "name": "Click Profile Button",
+      "action": "click_element",
+      "args": {
+        "xpath": "/html/body/div[2]/header/div[2]/div[3]/div[1]/div/div/a/span"
+      }
+    },
+    {
+      "name": "Check email matches regex",
+      "action": "matches_regex",
+      "args": {
+        "xpath": "/html/body/div[2]/header/div[2]/div[4]/div[1]/div[2]/div[2]",
+        "regex": "qadsc2020@gmail.com"
+      }
+    }
 
-    ]
+  ]
 }

@@ -38,6 +38,28 @@
             "args": {
                 "xpath": "//*[@id=\"submit-button\"]"
             }
-        }
+        },
+        {
+            "name": "Press the Profile button",
+            "action": "click_element",
+            "args": {
+                "xpath": "/html/body/header/div/ol[2]/li[2]/a/div[1]/img"
+            }
+        },
+        {
+            "name": "Press the MyProfile button",
+            "action": "click_element",
+            "args": {
+                "xpath": "//*[@id=\"mainbar-full\"]/div[1]/div[1]/a[1]"
+            }
+        },
+        {
+            "name": "Check regex",
+            "action": "matches_regex",
+            "args": {
+              "xpath": "//*[@id=\"user-card\"]/div/div[2]/div/div[1]/div/div[1]/h2/div",
+              "regex": "qadsc2020"
+            }
+          }
     ]
 }

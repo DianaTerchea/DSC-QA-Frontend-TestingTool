@@ -6,7 +6,7 @@
             "name": "Go to Twitch",
             "action": "go_to_url",
             "args": {
-                "url": "https://www.twitch.tv//"
+                "url": "https://www.twitch.tv"
             }
         },
         {
@@ -20,7 +20,7 @@
             "name": "Insert username",
             "action": "input_element",
             "args": {
-                "xpath": "//*[@id=\"username\"]",
+                "xpath": "//*[@id=\"login-username\"]",
                 "input_text": "qadsc2020"
             }
         },
@@ -28,7 +28,7 @@
             "name": "Insert password",
             "action": "input_element",
             "args": {
-                "xpath": "//*[@id=\"password\"]",
+                "xpath": "//*[@id=\"password-input\"]",
                 "input_text": "qaguys;1999"
             }
         },
@@ -37,6 +37,28 @@
             "action": "click_element",
             "args": {
                 "xpath": "/html/body/div[2]/div/div/div/div/div/div[1]/div/div/div[3]/form/div/div[3]/button"
+            }
+        },
+        {
+            "name": "Press user account",
+            "action": "click_element",
+            "args": {
+                "xpath": "/html/body/div[1]/div/div[2]/nav/div/div[3]/div[6]/div/div/div/div[1]/button/div/figure/img"
+            }
+        },
+        {
+            "name": "Press user account info",
+            "action": "click_element",
+            "args": {
+                "xpath": "/html/body/div[1]/div/div[2]/nav/div/div[3]/div[6]/div/div/div/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div[1]/div[1]/div[1]/div[1]/div[1]/a/figure/img"
+            }
+        },
+        {
+            "name": "Verify username",
+            "action": "matches_regex",
+            "args": {
+                "xpath": "/html/body/div[1]/div/div[2]/div[2]/main/div[2]/div[3]/div/div/div/div/div[6]/div[1]/div[1]/div/div/div[2]/div[1]/div",
+                "regex": "qadsc2020"
             }
         }
     ]

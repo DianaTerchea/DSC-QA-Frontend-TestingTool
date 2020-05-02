@@ -1,0 +1,45 @@
+{
+    "name": "Login Reddit",
+    "url": "",
+    "tasks": [
+        {
+            "name": "Go to Reddit",
+            "action": "go_to_url",
+            "args": {
+                "url": "https://www.reddit.com/login/"
+            }
+        },
+        {
+            "name": "Insert email",
+            "action": "input_element",
+            "args": {
+                "xpath": "//*[@id=\"loginUsername\"]",
+                "input_text": "qadsc2020"
+            }
+        },
+        {
+            "name": "Insert password",
+            "action": "input_element",
+            "args": {
+                "xpath": "//*[@id=\"loginPassword\"]",
+                "input_text": "qaguys2020"
+            }
+        },
+        {
+            "name": "Press enter",
+            "action": "input_element",
+            "args": {
+                "xpath": "//*[@id=\"loginPassword\"]",
+                "input_text": "\ue007"
+            }
+        },
+        {
+            "name": "click elem",
+            "action": "matches_regex",
+            "args": {
+                "xpath": "/html/body/div[1]/div/div/div/div[1]/header/div/div[2]/div[2]/div/div[2]/button/span[1]/span/span/span[1]",
+                "regex": "qadsc2020aaa"
+            }
+        }
+    ]
+}
