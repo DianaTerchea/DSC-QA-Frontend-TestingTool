@@ -21,7 +21,7 @@
       "name": "Click Forward Button",
       "action": "click_element",
       "args": {
-        "xpath": "//*[@id=\"identifierNext\"]/div[2]"
+        "xpath": "//*[@id=\"identifierNext\"]"
       }
     },
     {
@@ -36,21 +36,21 @@
       "name": "Click Forward Button",
       "action": "click_element",
       "args": {
-        "xpath": "//*[@id=\"passwordNext\"]/div[2]"
+        "xpath": "//*[@id=\"passwordNext\"]"
       }
     },
     {
       "name": "Click Profile Button",
       "action": "click_element",
       "args": {
-        "xpath": "/html/body/div[2]/header/div[2]/div[3]/div[1]/div/div/a/span"
+        "xpath": "//*[@id=\"gb\"]/div[2]/div[3]/div/div/div/a"
       }
     },
     {
       "name": "Check email matches regex",
       "action": "matches_regex",
       "args": {
-        "xpath": "/html/body/div[2]/header/div[2]/div[4]/div[1]/div[2]/div[2]",
+        "xpath": "//*[@id=\"gb\"]/div[2]/div[5]/div[1]/div[2]/div[2]",
         "regex": "qadsc2020@gmail.com"
       }
     }

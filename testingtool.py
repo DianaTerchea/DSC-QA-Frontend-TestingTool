@@ -5,7 +5,7 @@ if __name__ == '__main__':
     from TestingTool.testsuite import TestSuite
     from TestingTool.scenario import Scenario
 
-    with open("TestingTool/tests/login_twitch.json", "r") as f:
+    with open("TestingTool/tests/google_login.json", "r") as f:
         scenario = Scenario.from_json(f.read())
     result = scenario.run()
     if result.result:
